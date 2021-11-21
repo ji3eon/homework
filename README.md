@@ -65,7 +65,7 @@ sed 명령어는 동작시 내부적으로 두 개의 워크스페이스를 사�
 
 >>>>>>> ee8c309183dd2930d8e261bd5f0163f112c30eed
 
-### AWK 명령어
+### Awk 명령어
 awk 명령의 입력으로 지정된 파일로부터 데이터를 분류한 다음, 분류된 텍스트 데이터를 바탕으로 패턴 매칭 여부를 검사하거나 데이터 조작 및 연산등의 액션을 수행하고, 그 결과를 출력하는 기능을 수행
 awk 명령으로 할 수 있는 일들을 살펴보면 다음과 같은 일들을 할 수 있다.
 1) 텍스트 파일의 전체 내용 출력
@@ -74,3 +74,17 @@ awk 명령으로 할 수 있는 일들을 살펴보면 다음과 같은 일들�
 4) 패턴이 포함된 레코드 출력
 5) 특정 필드에 연산 수행 결과 출력
 6) 필드 값 비교에 따라 레코드 출력
+![awk](https://user-images.githubusercontent.com/77104208/142766135-badac525-ee85-43eb-a340-a1897b4aa4b5.png)
+
+#### Awk명령어 옵션
+```
+awk [OPTION...] [awk program] [ARGUMENT...]
+      OPTION
+        -F        : 필드 구분 문자 지정.
+        -f        : awk program 파일 경로 지정.
+        -v        : awk program에서 사용될 특정 variable값 지정.
+      awk program
+        -f 옵션이 사용되지 않은 경우, awk가 실행할 awk program 코드 지정.
+      ARGUMENT
+        입력 파일 지정 또는 variable 값 지정.
+```
