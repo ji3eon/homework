@@ -10,3 +10,4 @@ getopt는 첫 번째와 두 번째 인자는 main함수의 argc와 arg를 그대
 
 
 
+Getopts 명령어
